@@ -1,0 +1,4 @@
+-- DEVELOPMENT-- 
+DROP DATABASE IF EXISTS passport;
+CREATE DATABASE passport;
+USE passport;
