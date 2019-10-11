@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/orhys/parkspot#readme",
   "dependencies": {
+    "express-session": "^1.16.2",
     "node.js": "0.0.0"
   }
 }
