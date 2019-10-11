@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "express-session": "^1.16.2",
     "mysql2": "^1.7.0",
-    "nodejs": "12.9.0",
+    "nodejs": "12.11.1",
     "npm": "6.11.3",
     "parse-json": "^5.0.0",
     "passport": "^0.4.0",
