@@ -1,9 +1,16 @@
 {
   "development": {
     "username": "root",
-    "password": "Majinboo1",
+    "password": "password",
     "database": "passport",
     "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "b195fa14d76a52",
+    "password": "242916df",
+    "database": "heroku_07001207fb2a212",
+    "host": "us-cdbr-iron-east-05.cleardb.net",
     "dialect": "mysql"
   }
 }
