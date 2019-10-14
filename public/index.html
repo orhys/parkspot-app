@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>PARKspot | Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,900,100,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: GoodLanding
+    Template URL: https://templatemag.com/goodlanding-bootstrap-landing-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">PARKspot</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row">
+        <h1>Reserve your spot today</h1>
+        <h2>For parking in the city, and not in a parking garage.</h2>
+        <br /><br />
+        <a href="../index.html#learn" class="btn btn-primary">LEARN MORE</a>
+        <a href="../index.html#gwrap" class="btn btn-transparent">GET STARTED</a>
+
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <div id="bwrap">
+    <div class="container" id="learn">
+      <div class="row mt-row">
+        <div class="col-md-4 col-md-offset-2">
+          <h3>HOW DOES IT WORK?</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic
+            typesetting, remaining essentially unchanged.</p>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+            more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive" src="img/d324_5-512.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Container-->
+  <div id="gwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mac">
+          <img src="img/car4.png" class="img-responsive">
+        </div>
+        <div class="col-md-4">
+          <h3>Log into PARKspot</h3>
+          <p>Welcome to PARKspot log in to reserve your parking spot.</p>
+          <form class="login">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="email-input" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="password-input" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-success btn-md btn-block">Log In</button>
+          </form>
+          <br />
+          <p>Need an account? <a href="/signup.html">Sign up</a></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="blackwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-md-offset-2">
+          <h3>Make a reservation</h3>
+          <form class>
+            <div class="form-group">
+              <label for="owner">Owner</label>
+              <input type="text" class="form-control" id="owner-input" placeholder="Owner">
+            </div>
+            <div class="form-group">
+              <label for="carModel">Car</label>
+              <input type="text" class="form-control" id="car-input" placeholder="Car">
+            </div>
+            <div class="form-group">
+              <label for="licensePlate">License Plate</label>
+              <input type="text" class="form-control" id="plate-input" placeholder="License Plate">
+            </div>
+            <!-- <div class="form-group">
+            <label for="reservationCurrent">Reservation Current</label>
+            <input type="text" class="form-control" id="current-input" placeholder="License Plate">
+          </div> -->
+            <button type="submit" id="make-res" class="btn btn-success btn-md btn-block">Reserve</button>
+            <p>Below are the spots that are already reserved. This lot has a total of 10 spots.</p>
+          </form>
+
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+          <h3>Spots already reserved</h3>
+          <span class="spot-reserved"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3>Get In Touch</h3>
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name"
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5"
+                data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- / contact -->
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>GoodLanding</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/goodlanding-bootstrap-landing-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+      </div>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/reservations.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+
+</html>
