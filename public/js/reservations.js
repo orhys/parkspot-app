@@ -69,11 +69,14 @@ $(document).ready(function () {
       console.log("submitted")
 
       event.preventDefault();
+
       var resData = {
         owner: ownerInput.val().trim(),
         car: carInput.val().trim(),
         license: licenseInput.val().trim()
       };
+
+      // $(".spot-reserved").text(resData);
 
       if (!resData.owner || !resData.car || !resData.license) {
         return;
